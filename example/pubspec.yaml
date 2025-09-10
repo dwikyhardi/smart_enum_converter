@@ -1,0 +1,19 @@
+name: example
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  smart_enum_converter:
+    path: ../
+  json_annotation: ^4.9.0
+  freezed_annotation: ^3.0.0
+
+dev_dependencies:
+  test: ^1.26.1
+  build_runner: ^2.4.15
+  json_serializable: ^6.9.5
+  lints: ^6.0.0
+  freezed: ^3.0.6

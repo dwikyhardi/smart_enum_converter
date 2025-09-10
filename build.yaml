@@ -1,0 +1,9 @@
+builders:
+  smart_enum_converter:
+    import: "package:smart_enum_converter/builder.dart"
+    builder_factories: [ "smartEnumConverterBuilder" ]
+    build_extensions: { ".dart": [ ".smart.dart" ] }
+    auto_apply: dependents
+    build_to: source
+    runs_before: [ "json_serializable|json_serializable" , "freezed|freezed" ]
+    required_inputs: [ ".graphql.dart" ]
